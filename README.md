@@ -10,8 +10,20 @@ You can add `#StandWithCyprus` to the console of your php project.
 
 ## Installation
 
-Just run the composer require command from the Terminal:
+This package contains only a [single Command Application](https://symfony.com/doc/current/components/console/single_command_tool.html).
+
+Add the composer require command from the Terminal:
 
 ```bash
 $ composer require tplcom/stand-with-cyprus
+```
+
+Add an entry on the composer.json `scripts` 'post-install-cmd' or any other hook:
+
+```
+scripts: {
+  "post-install-cmd": [
+    "tplcom\\StandWithCyprus"
+  ]
+}
 ```
