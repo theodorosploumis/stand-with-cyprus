@@ -2,12 +2,12 @@
 
 <?php
 
+require __DIR__.'/../vendor/autoload.php';
+
 use Symfony\Component\Console\Exception\ExceptionInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\SingleCommandApplication;
-
-
 
 try {
     (new SingleCommandApplication())
