@@ -18,7 +18,8 @@
         "symfony/console": "^5.4|^6.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.8"
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "clue/phar-composer": "^1.4"
     },
     "autoload": {
         "psr-4": {
@@ -27,8 +28,12 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "bin": [
+        "bin/stand-with-cyprus.phar"
+    ],
     "scripts": {
         "php-cs-fixer": "php-cs-fixer fix --diff",
-        "phpstan": "phpstan analyse"
+        "phpstan": "phpstan analyse",
+        "build": "rm -rf bin/* && phar-composer build ./ && mv stand-with-cyprus.phar bin"
     }
 }

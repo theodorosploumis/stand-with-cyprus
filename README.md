@@ -23,7 +23,19 @@ Add an entry on the composer.json `scripts` 'post-install-cmd' or any other hook
 ```
 scripts: {
   "post-install-cmd": [
-    "tplcom\\StandWithCyprus"
+    "stand-with-cyprus"
   ]
 }
+```
+
+## Development
+
+- We create the binary using [clue/phar-composer](https://github.com/clue/phar-composer).
+
+```bash
+git clone git@github.com:theodorosploumis/stand-with-cyprus.git
+cd stand-with-cyprus
+composer install
+
+composer build
 ```
