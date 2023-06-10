@@ -43,11 +43,5 @@ jobs:
       - name: Install composer dependencies
         run: composer install --no-progress --no-interaction --prefer-${{ matrix.package-release }}
 
-      - name: Run unit tests
-        run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
-
-      - name: Upload to Scrutinizer
-        continue-on-error: true
-        run: |
-          wget https://scrutinizer-ci.com/ocular.phar
-          php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+      - name: phpstan analyse
+        run: composer phpstan

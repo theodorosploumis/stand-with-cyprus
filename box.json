@@ -6,6 +6,6 @@
     "LICENSE",
     ".github"
   ],
-  "main": "StandWithCyprus.php",
+  "main": "src/StandWithCyprus.php",
   "output": "bin/stand-with-cyprus"
 }
