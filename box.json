@@ -1,11 +1,11 @@
 {
   "chmod": "0700",
   "blacklist": [
-    "bin/stand-with-cyprus.php",
+    "bin/stand-with-cyprus",
     "README.md",
     "LICENSE",
     ".github"
   ],
   "main": "StandWithCyprus.php",
-  "output": "bin/stand-with-cyprus.php"
+  "output": "bin/stand-with-cyprus"
 }
