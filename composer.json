@@ -1,0 +1,50 @@
+{
+    "name": "tplcom/stand-with-cyprus",
+    "description": "Stand with Cyprus",
+    "keywords": [
+        "politics",
+        "war",
+        "cyprus"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tplcom"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1",
+        "illuminate/support": "^8.0|^9.0",
+        "symfony/console": "^5.4|^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0 || ^7.4",
+        "nunomaduro/larastan": "^1.0 || ^2.0",
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "tplcom\\StandWithCyprus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tplcom\\StandWithCyprus\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tplcom\\StandWithCyprus\\StandWithCyprusServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix --diff",
+        "phpstan": "phpstan analyse",
+        "test": "phpunit"
+    }
+}
