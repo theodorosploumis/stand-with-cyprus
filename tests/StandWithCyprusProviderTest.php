@@ -4,14 +4,13 @@ namespace tplcom\StandWithCyprus\Test;
 
 use Illuminate\Console\OutputStyle;
 use tplcom\StandWithCyprus\StandWithCyprusServiceProvider;
-use Ukeloop\StandWithUkraine\Test\TestCase;
 
 /**
  * @internal
  *
  * @coversNothing
  */
-final class StandWithCyprusServiceProviderTest extends TestCase
+final class StandWithCyprusProviderTest extends TestCase
 {
     /**
      * @throws \ReflectionException
