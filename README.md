@@ -30,7 +30,7 @@ scripts: {
 
 ## Development
 
-- We create the binary using [clue/phar-composer](https://github.com/clue/phar-composer).
+- We create the binary using [box](https://github.com/box-project/box).
 
 ```bash
 git clone git@github.com:theodorosploumis/stand-with-cyprus.git
