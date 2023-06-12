@@ -1,5 +1,7 @@
 # \#StandWithCyprus
 
+!["StandWithCyprus example"](standwithcyprus.jpeg)
+
 ## About
 
 This is a political message for composer about the "Turkish invasion of Cyprus" which started in 1974.
