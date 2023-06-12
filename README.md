@@ -17,12 +17,12 @@ This package contains only a [single Command Application](https://symfony.com/do
 Add the composer require command from the Terminal:
 
 ```bash
-$ composer require tplcom/stand-with-cyprus
+composer require tplcom/stand-with-cyprus
 ```
 
 Add an entry on the composer.json `scripts` 'post-install-cmd' or any other hook:
 
-```
+```composer
 scripts: {
   "post-install-cmd": [
     "stand-with-cyprus"
